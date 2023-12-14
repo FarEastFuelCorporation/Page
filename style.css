@@ -1,13 +1,13 @@
 /* general design starts here */
-*{
-    margin: 0px;
-    padding: 0px;
+    *{
+        margin: 0px;
+        padding: 0px;
     }
     body{
         height: 100vh;
         width: 100%;
         justify-content: center;
-        background-image: url(images/background.jpeg);
+        background-image: url(images/background.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -22,7 +22,16 @@
     }
     
     a{
+        display: flex;
         text-decoration: none;
+    }
+    a h6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+        margin: 0;
+        font-weight: bold;
     }
     
     button{
@@ -57,15 +66,19 @@
         background: rgba(0,0,0,.5);
         padding-bottom: 50px;
     }
+
+    #home{
+        background-image: url('images/landing\ page.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 100vh;
+    }
     
     .container-box h2{
         padding-top: 50px;
         color: white;
         text-align: center;
-    }
-    
-    img{
-        border-radius: 25px;
     }
     
     /* navbar starts here */
@@ -78,6 +91,7 @@
         color: white !important;
         display: flex;
         justify-content: center;
+        font-size: 16px;
     }
     
     ul li a:hover, a:hover, h3, h4, h6{
@@ -381,6 +395,12 @@
     
     footer{
         border-top: solid 1px #ffbf00;
+        height: 60px;
+    }
+
+    footer > div{
+        display: flex;
+        flex-wrap: wrap;
     }
     
     @media only screen and (max-width: 768px){
